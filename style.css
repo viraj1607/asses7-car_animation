@@ -1,0 +1,515 @@
+body{
+    background-color: yellow;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.row1{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    animation-name: skewX-box;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes skewX-box {
+    0%{
+       transform: skewX(-30deg);
+    }
+    50%{
+        transform: skewX(30deg);
+    }
+    100%{
+        transform: skewX(-30deg);
+    }
+}
+
+.row2{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    animation-name: skewY-box;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes skewY-box {
+    0%{
+       transform: skewY(-30deg);
+    }
+    50%{
+        transform: skewY(30deg);
+    }
+    100%{
+        transform: skewY(-30deg);
+    }
+}
+
+.row3{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    animation-name: rotate-box;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes rotate-box {
+    100%{
+        transform: rotate(1turn);
+    }
+}
+
+.row4{
+    width: 100px;
+    height: 100px;
+}
+
+#row41{
+    background-color: skyblue;
+    animation-name: reduce-height;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes reduce-height {
+    50%{
+        transform: scaleY(0.5);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+#row42{
+    background-color: maroon ;
+    animation-name: reduce-width;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes reduce-width {
+    50%{
+        transform: scaleX(0.5);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+#row43{
+    background-color:green;
+    animation-name: half-rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes half-rotate {
+    50%{
+        transform: rotate(180deg);
+    } 
+    100%{
+        transform: rotate(0deg);
+    }   
+}
+
+.boxes{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.box1{
+    transition: width 2s;
+}
+
+.box1:hover{
+    width: 300px;
+}
+
+.box2{
+    transition: height,width 2s,2s;
+}
+
+.box2:hover{
+    height: 300px;
+    width: 300px;
+}
+
+.box3{
+    transition: width 2s;
+    transition-timing-function: linear;
+}
+
+.box3:hover{
+    width: 300px;
+}
+
+.box4{
+    transition: width 2s;
+    transition-timing-function: ease;
+}
+
+.box4:hover{
+    width: 300px;
+}
+
+.box5{
+    transition: width 2s;
+    transition-timing-function: ease-in;
+}
+
+.box5:hover{
+    width: 300px;
+}
+
+.box6{
+    transition: width 2s;
+    transition-timing-function: ease-out;
+}
+
+.box6:hover{
+    width: 300px;
+}
+
+.box7{
+    transition: width 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.box7:hover{
+    width: 300px;
+}
+
+.anchor-tag{
+    font-size: 25px;
+}
+
+.sky{
+    position: absolute;
+    width: 200px;
+    z-index: -1;
+}
+
+#greetings{
+    width: 650px;
+    display: flex;
+    position: absolute;
+    font-size: 45px;
+    justify-content: space-evenly;
+    top: 10px;
+    left: 450px;
+}
+
+#sun{
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    right:100px;
+    top: 80px;
+    animation-name: sun-anim;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes sun-anim {
+    5%{
+        transform: translate(-50px);
+    }
+    10%{
+        transform: translate(-100px);
+    }
+    15%{
+        transform: translate(-150px);
+    }
+    20%{
+        transform: translate(-200px);
+    }
+    25%{
+        transform: translate(-250px);
+    }
+    30%{
+        transform: translate(-300px);
+    }
+    35%{
+        transform: translate(-350px);
+    }
+    40%{
+        transform: translate(-400px);
+    }
+    45%{
+        transform: translate(-450px);
+    }
+    50%{
+        transform: translate(-500px);
+    }
+    55%{
+        transform: translate(-550px);
+    }
+    60%{
+        transform: translate(-600px);
+    }
+    65%{
+        transform: translate(-650px);
+    }
+    70%{
+        transform: translate(-700px);
+    }
+    75%{
+        transform: translate(-750px);
+    }
+    80%{
+        transform: translate(-800px);
+    }
+    85%{
+        transform: translate(-850px);
+    }
+    90%{
+        transform: translate(-900px);
+    }
+    95%{
+        transform: translate(-950px);
+    }
+    100%{
+        transform: translate(-1000px);
+    }
+}
+.city{
+    position: absolute;
+    top: 115px;
+    z-index: -1;
+    animation-name: city-anim;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes city-anim {
+    5%{
+        transform: translate(-10px);
+    }
+    10%{
+        transform: translate(-20px);
+    }
+    15%{
+        transform: translate(-30px);
+    }
+    20%{
+        transform: translate(-40px);
+    }
+    25%{
+        transform: translate(-50px);
+    }
+    30%{
+        transform: translate(-60px);
+    }
+    35%{
+        transform: translate(-70px);
+    }
+    40%{
+        transform: translate(-80px);
+    }
+    45%{
+        transform: translate(-90px);
+    }
+    50%{
+        transform: translate(-100px);
+    }
+    55%{
+        transform: translate(-110px);
+    }
+    60%{
+        transform: translate(-120px);
+    }
+    65%{
+        transform: translate(-130px);
+    }
+    70%{
+        transform: translate(-140px);
+    }
+    75%{
+        transform: translate(-150px);
+    }
+    80%{
+        transform: translate(-160px);
+    }
+    85%{
+        transform: translate(-170px);
+    }
+    90%{
+        transform: translate(-180px);
+    }
+    95%{
+        transform: translate(-190px);
+    }
+    100%{
+        transform: translate(-200px);
+    }
+}
+
+#flag{
+    position: absolute;
+    right: 210px;
+    top: -50px;
+}
+.car{
+    position: absolute;
+    top: 300px;
+    left: 500px;
+}
+
+#wheel2{
+    position: absolute;
+    top: 106px;
+    left:44px;
+    animation-name: wheel-anim;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+#wheel1{
+    position: absolute;
+    top: 106px;
+    left:350px;
+    animation-name: wheel-anim;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes wheel-anim {
+    5%{
+        transform: rotate(18deg);
+    }
+    10%{
+        transform: rotate(36deg);
+    }
+    15%{
+        transform: rotate(54deg);
+    }
+    20%{
+        transform: rotate(72deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    30%{
+        transform: rotate(108deg);
+    }
+    35%{
+        transform: rotate(126deg);
+    }
+    40%{
+        transform: rotate(144deg);
+    }
+    45%{
+        transform: rotate(162deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    55%{
+        transform: rotate(198deg);
+    }
+    60%{
+        transform: rotate(216deg);
+    }
+    65%{
+        transform: rotate(234deg);
+    }
+    70%{
+        transform: rotate(252deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    80%{
+        transform: rotate(288deg);
+    }
+    85%{
+        transform: rotate(306deg);
+    }
+    90%{
+        transform: rotate(324deg);
+    }
+    95%{
+        transform: rotate(342deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.road{
+    position: absolute;
+    z-index: -1;
+    margin-top: 400px;
+    animation-name: road-anim;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes road-anim {
+    5%{
+        transform: translate(-50px);
+    }
+    10%{
+        transform: translate(-100px);
+    }
+    15%{
+        transform: translate(-150px);
+    }
+    20%{
+        transform: translate(-200px);
+    }
+    25%{
+        transform: translate(-250px);
+    }
+    30%{
+        transform: translate(-300px);
+    }
+    35%{
+        transform: translate(-350px);
+    }
+    40%{
+        transform: translate(-400px);
+    }
+    45%{
+        transform: translate(-450px);
+    }
+    50%{
+        transform: translate(-500px);
+    }
+    55%{
+        transform: translate(-550px);
+    }
+    60%{
+        transform: translate(-600px);
+    }
+    65%{
+        transform: translate(-650px);
+    }
+    70%{
+        transform: translate(-700px);
+    }
+    75%{
+        transform: translate(-750px);
+    }
+    80%{
+        transform: translate(-800px);
+    }
+    85%{
+        transform: translate(-850px);
+    }
+    90%{
+        transform: translate(-900px);
+    }
+    95%{
+        transform: translate(-950px);
+    }
+    100%{
+        transform: translate(-1000px);
+    }
+}
